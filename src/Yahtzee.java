@@ -33,8 +33,14 @@ public class Yahtzee {
 	public static void main(String[] args) {
 		
 		YahtzeeSpel spel = new YahtzeeSpel();
+		DobbelSteen d = new DobbelSteen();
+		YahtzeeSpel.dobbelstenen();
 		YahtzeeSpel.spelen();
-		YahtzeeSpel.werpen();
+		
+		
+		System.out.println();
+		
+		
 		
 		
 
