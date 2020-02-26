@@ -1,9 +1,29 @@
 import java.util.Scanner;
 import java.util.Random;
+import java.util.ArrayList;
 
 public class YahtzeeSpel {
 	
+	static ArrayList<Integer> arr = new ArrayList<Integer>();
+	
+	
+	public static void dobbelstenen() {
+	
+		arr.add(DobbelSteen.werpen());
+		arr.add(DobbelSteen.werpen());
+		arr.add(DobbelSteen.werpen());
+		arr.add(DobbelSteen.werpen());
+		arr.add(DobbelSteen.werpen());
+		arr.add(DobbelSteen.werpen());
+		
+	}	
+	
 	public static void spelen() {
+		
+		
+		
+		
+		
 		int x = 100;
 		for(int i=1;i < x ;i++){
 			Scanner sc = new Scanner(System.in);			
@@ -14,7 +34,7 @@ public class YahtzeeSpel {
 //			System.out.println(gaan);
 			String go = sc.nextLine();
 			if (go.equals("") ) {
-				System.out.println("nog een rondje");
+				System.out.println(arr);
 				
 			} 
 			if(go.equals("q")) { 
@@ -30,15 +50,6 @@ public class YahtzeeSpel {
 		}
 	}
 	
-	 static int werpen() {
-		
-		
-		Random r = new Random();
-		
-		int r1 = r.nextInt(6);
-		
-		return r1; 
-		
-	}
+	 
 
 }
