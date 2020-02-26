@@ -5,33 +5,25 @@ import java.util.ArrayList;
 public class YahtzeeSpel {
 	
 	static ArrayList<Integer> arr = new ArrayList<Integer>();
+	Integer[] inputSpeler = {};
 	
 	
 	public static void dobbelstenen() {
-	
-		arr.add(DobbelSteen.werpen());
-		arr.add(DobbelSteen.werpen());
-		arr.add(DobbelSteen.werpen());
-		arr.add(DobbelSteen.werpen());
-		arr.add(DobbelSteen.werpen());
-		arr.add(DobbelSteen.werpen());
+			
+		for(int x=1;x <= 5 ;x++){
+			DobbelSteen ds = new DobbelSteen();
+			arr.add(DobbelSteen.werpen());
+		
+		}
+
 		
 	}	
 	
 	public static void spelen() {
 		
 		
-		
-		
-		
-		int x = 100;
-		for(int i=1;i < x ;i++){
+		for(Integer i : arr){
 			Scanner sc = new Scanner(System.in);			
-//			String test = sc.nextLine();
-//			System.out.println(">>"+test.equals(""));
-//			char go = sc.nextLine();
-//			int gaan = go;
-//			System.out.println(gaan);
 			String go = sc.nextLine();
 			if (go.equals("") ) {
 				System.out.println(arr);
@@ -48,6 +40,24 @@ public class YahtzeeSpel {
 			
 
 		}
+	}
+	
+	public static void vasthouden() {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		String inputSpeler = scanner.next();
+		
+		Integer.parseInt(inputSpeler);
+		
+		
+		//Maak een losse methode vasthouden(). 
+		//Via een Scanner vraagt het programma om invoer. 
+		//De invoer wordt via Integer.parseInt() omgezet tot een blokkeerarray van 0 en 1 bijvoorbeeld 11001. 
+		//Dit blokkeerarray is een field van het YahtzeeSpel.
+		
+		
+	
 	}
 	
 	 

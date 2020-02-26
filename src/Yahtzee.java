@@ -1,3 +1,4 @@
+
 /*1. Maak een loop in de public static void main die loopt zolang je op enter drukt, en stopt zodra je op q drukt.
 
 2. Maak een losse klasse YahtzeeSpel met een methode spelen(). Verhuis de loop van 1. naar de methode spelen(). Instantieer een YahtzeeSpel in de psvm en start de methode spelen.
@@ -27,21 +28,14 @@ Meerdere spelers:
  */
 import java.util.Scanner;
 
-
 public class Yahtzee {
 
 	public static void main(String[] args) {
-		
+
 		YahtzeeSpel spel = new YahtzeeSpel();
 		DobbelSteen d = new DobbelSteen();
 		YahtzeeSpel.dobbelstenen();
 		YahtzeeSpel.spelen();
-		
-		
-		System.out.println();
-		
-		
-		
 		
 
 	}
